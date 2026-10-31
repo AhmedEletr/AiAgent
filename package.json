@@ -1,0 +1,35 @@
+{
+  "name": "astromind-a1-core",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "NODE_NO_WARNINGS=1 tsx watch src/server.ts",
+    "cli": "NODE_NO_WARNINGS=1 tsx src/cli.ts",
+    "build": "tsc",
+    "start": "NODE_NO_WARNINGS=1 node dist/server.js"
+  },
+  "dependencies": {
+    "@google/genai": "^2.31.0",
+    "@hono/node-server": "^1.13.7",
+    "cheerio": "^1.0.0",
+    "dotenv": "^16.4.7",
+    "ffmpeg-static": "^5.3.0",
+    "ffprobe-static": "^3.1.0",
+    "fluent-ffmpeg": "^2.1.3",
+    "groq-sdk": "^0.15.0",
+    "hono": "^4.6.14",
+    "msedge-tts": "^1.2.6",
+    "node-edge-tts": "^1.2.5",
+    "pdfkit": "^0.20.2",
+    "pptxgenjs": "^4.0.1",
+    "puppeteer": "^19.0.0",
+    "puppeteer-screen-recorder": "^3.0.6"
+  },
+  "devDependencies": {
+    "@types/fluent-ffmpeg": "^2.1.28",
+    "@types/node": "^22.10.2",
+    "@types/pdfkit": "^0.17.7",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
